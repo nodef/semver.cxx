@@ -1,28 +1,25 @@
 {
-  "name": "taskflow.cxx",
-  "version": "4.2026.5",
-  "description": "A General-purpose Task-parallel Programming System using Modern C++; Tsung-Wei Huang (2018).",
+  "name": "semver.cxx",
+  "version": "1.2025.7",
+  "description": "Semantic Versioning for modern C++; Daniil Goncharov (2018).",
   "keywords": [
     "c++",
     "library",
-    "taskflow",
-    "parallel",
-    "concurrency",
-    "multithreading",
-    "task graph",
-    "thread pool"
+    "semantic versioning",
+    "semver",
+    "version"
   ],
-  "homepage": "https://github.com/nodef/taskflow.cxx#readme",
+  "homepage": "https://github.com/nodef/semver.cxx#readme",
   "bugs": {
-    "url": "https://github.com/nodef/taskflow.cxx/issues"
+    "url": "https://github.com/nodef/semver.cxx/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/taskflow.cxx.git"
+    "url": "git+https://github.com/nodef/semver.cxx.git"
   },
   "license": "MIT",
   "author": "wolfram77@gmail.com",
-  "main": "taskflow.hpp",
+  "main": "semver.hpp",
   "scripts": {
     "test": "bash build.sh test"
   }
