@@ -5,7 +5,7 @@
 
 C++ library compare and manipulate versions are available as extensions to the `<major>.<minor>.<patch>-<prerelease_tag>+<build_metadata>` format complying with [Semantic Versioning 2.0.0](https://semver.org)
 
-## [Features & Examples](example/)
+## [Features & Examples](https://github.com/Neargye/semver/blob/master/example/)
 
 * Parse
 
@@ -54,9 +54,40 @@ C++ library compare and manipulate versions are available as extensions to the `
 
 Check the *examples* folder to see more various usage examples
 
-## Integration
+## Installation
 
-You should add required file [semver.hpp](include/semver.hpp).
+Run:
+
+```bash
+$ npm i semver.cxx
+```
+
+And then include `semver.hpp` as follows:
+
+```cxx
+// main.cxx
+#include <semver.hpp>
+
+int main() { /* ... */ }
+```
+
+Finally, compile while adding the path `node_modules/semver.cxx` to your compiler's include paths.
+
+```bash
+$ clang++ -std=c++20 -I./node_modules/semver.cxx main.cxx  # or, use g++
+$ g++     -std=c++20 -I./node_modules/semver.cxx main.cxx
+```
+
+You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
+
+```bash
+$ cpoach clang++ -std=c++20 main.cxx  # or, use g++
+$ cpoach g++     -std=c++20 main.cxx
+```
+
+---
+
+Alternatively, you should add required file [semver.hpp](semver.hpp).
 
 If you are using [vcpkg](https://github.com/Microsoft/vcpkg/) on your project for external dependencies, then you can use the [neargye-semver](https://github.com/microsoft/vcpkg/tree/master/ports/neargye-semver).
 
@@ -81,3 +112,12 @@ CPMAddPackage(
 * GCC >= 7
 
 ## Licensed under the [MIT License](LICENSE)
+
+<br>
+<br>
+
+
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
+[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/Neargye/semver)
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/semver.cxx)
