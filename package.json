@@ -1,6 +1,6 @@
 {
   "name": "semver.cxx",
-  "version": "1.2025.7",
+  "version": "1.2025.8",
   "description": "Semantic Versioning for modern C++; Daniil Goncharov (2018).",
   "keywords": [
     "c++",

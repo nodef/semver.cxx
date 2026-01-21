@@ -16,12 +16,10 @@ fi
 
 # Test the project
 test() {
-echo "Running 01-scope_exit.cxx ..."
-g++ -I. -o 01.exe examples/01-scope_exit.cxx     && ./01.exe && echo -e "\n"
-echo "Running 02-scope_fail.cxx ..."
-g++ -I. -o 02.exe examples/02-scope_fail.cxx     && ./02.exe && echo -e "\n"
-echo "Running 03-scope_success.cxx ..."
-g++ -I. -o 03.exe examples/03-scope_success.cxx  && ./03.exe && echo -e "\n"
+echo "Running 01-basic.cxx ..."
+clang++ -std=c++17 -I. -o 01.exe examples/01-basic.cxx && ./01.exe && echo -e "\n"
+echo "Running 02-range.cxx ..."
+clang++ -std=c++17 -I. -o 02.exe examples/02-range.cxx && ./02.exe && echo -e "\n"
 }
 
 
